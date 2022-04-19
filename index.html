@@ -44,5 +44,57 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar">
+      <span class="navbar-brand mb-0 h1">Search for Pokemon's!</span>
+    </nav>
+    <div class="container">
+      <form action="">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Pokemon's name / ID"
+        />
+        <span>Error: No such Pokemon</span>
+      </form>
+
+      <div class="row">
+        <div class="col text-center">Default</div>
+        <div class="col text-center">Shiny</div>
+      </div>
+
+      <div id="pokemon-img" class="box">
+        <img src="images/oT07arOT_400x400.jpg" alt="" />
+        <img id="reverse-arrow" src="images/reverse.png" alt="reverse-arrow" />
+      </div>
+
+      <div class="stats w-75">
+        <h2 class="text-center">Name</h2>
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Stat</th>
+              <th scope="col">Value</th>
+            </tr>
+            <tr>
+              <td>HP:</td>
+              <td>s</td>
+            </tr>
+            <tr>
+              <td>Attack:</td>
+              <td>s</td>
+            </tr>
+            <tr>
+              <td>Defense:</td>
+              <td>s</td>
+            </tr>
+            <tr>
+              <td>Base Experience:</td>
+              <td>s</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
