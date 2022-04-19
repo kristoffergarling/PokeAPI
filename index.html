@@ -43,7 +43,6 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <nav class="navbar">
@@ -52,8 +51,9 @@
 
     <div class="container">
       <div class="search-bar">
-        <form action="">
+        <form action="" id="pokemon-form">
           <input
+            id="user-input"
             class="form-control"
             type="text"
             placeholder="Pokemon's name / ID - Ex: Pikachu or 25"
@@ -77,37 +77,49 @@
 
       <div class="box image text-center">
         <img id="pokemon-img" src="images/oT07arOT_400x400.jpg" alt="" />
-        <img id="reverse-arrow" src="images/reverse.png" alt="reverse-arrow" />
+        <a href="#"
+          ><img id="reverse" src="images/reverse.png" alt="reverse-arrow"
+        /></a>
       </div>
 
       <table class="table table-sm">
-        <h2 class="text-center">Name (ID)</h2>
+        <h2 id="name" class="text-center">Name (ID)</h2>
         <thead>
           <tr>
             <th scope="col">Stat</th>
             <th scope="col">Value</th>
           </tr>
           <tr>
+            <td>Height:</td>
+            <td id="height"></td>
+          </tr>
+          <tr>
+            <td>Weight:</td>
+            <td id="weight"></td>
+          </tr>
+          <tr>
             <td>HP:</td>
-            <td></td>
+            <td id="hp"></td>
           </tr>
           <tr>
             <td>Attack:</td>
-            <td></td>
+            <td id="attack"></td>
           </tr>
           <tr>
             <td>Defense:</td>
-            <td></td>
+            <td id="defense"></td>
           </tr>
           <tr>
             <td>Base Experience:</td>
-            <td></td>
+            <td id="base-experience"></td>
           </tr>
         </thead>
       </table>
 
       <footer>
-        <p>Made with <a href="http://pokeapi.co/">PokeAPI</a></p>
+        <p>
+          Made with <a target="_blank" href="http://pokeapi.co/">PokeAPI</a>
+        </p>
         <p>
           <a
             class="media-link"
@@ -124,5 +136,6 @@
         </p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
