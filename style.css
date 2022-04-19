@@ -1,3 +1,76 @@
+body, th, tr {
+    background-color: #3B4CCA;
+    color: #FFDE00;
+}
+
+.navbar-brand {
+    font-family: 'Grape Nuts', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 400px;
+}
+
+/* Potential CSS if pokemon is not found */
+.error {
+    color: #CC0000;
+    border: 1px #CC0000 solid;
+}
+
+#error-msg {
+    color: #CC0000;
+    display: none;
+}
+/*  */
+
+button {
+    width: 10rem;
+    margin-bottom: 0.5rem;
+    color: #FFDE00;
+}
+
+/* Pokemon IMG */
+.image {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+#pokemon-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px #FFDE00 solid;
+    height: 20rem;
+}
+
 #reverse-arrow {
     height: 3rem;
+    position: absolute;
+    top: 16.5rem;
+    left: 18rem;
+    transform: rotate(100deg);
+}
+/*  */
+
+footer {
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer a {
+    color: #FFDE00;
+}
+
+footer a:hover {
+    color: #B3A125;
+}
+
+.media-link {
+    margin: auto 0.3rem auto 0.3rem;
+    font-size: 2rem;
 }

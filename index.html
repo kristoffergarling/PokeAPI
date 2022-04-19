@@ -4,7 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PokeAPI - by GarlingDev</title>
-    <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -12,6 +11,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,55 +47,82 @@
   </head>
   <body>
     <nav class="navbar">
-      <span class="navbar-brand mb-0 h1">Search for Pokemon's!</span>
+      <span class="navbar-brand mb-0 h1 mx-auto">Search for Pokemon's!</span>
     </nav>
-    <div class="container">
-      <form action="">
-        <input
-          class="form-control"
-          type="text"
-          placeholder="Pokemon's name / ID"
-        />
-        <span>Error: No such Pokemon</span>
-      </form>
 
-      <div class="row">
-        <div class="col text-center">Default</div>
-        <div class="col text-center">Shiny</div>
+    <div class="container">
+      <div class="search-bar">
+        <form action="">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Pokemon's name / ID - Ex: Pikachu or 25"
+          />
+          <span id="error-msg">Error: No Pokemon with that Name/ID</span>
+        </form>
       </div>
 
-      <div id="pokemon-img" class="box">
-        <img src="images/oT07arOT_400x400.jpg" alt="" />
+      <div class="row">
+        <div class="col text-center">
+          <button type="button" class="btn btn-outline-warning" id="default">
+            Default
+          </button>
+        </div>
+        <div class="col text-center">
+          <button type="button" class="btn btn-outline-warning" id="shiny">
+            Shiny
+          </button>
+        </div>
+      </div>
+
+      <div class="box image text-center">
+        <img id="pokemon-img" src="images/oT07arOT_400x400.jpg" alt="" />
         <img id="reverse-arrow" src="images/reverse.png" alt="reverse-arrow" />
       </div>
 
-      <div class="stats w-75">
-        <h2 class="text-center">Name</h2>
-        <table class="table table-sm">
-          <thead>
-            <tr>
-              <th scope="col">Stat</th>
-              <th scope="col">Value</th>
-            </tr>
-            <tr>
-              <td>HP:</td>
-              <td>s</td>
-            </tr>
-            <tr>
-              <td>Attack:</td>
-              <td>s</td>
-            </tr>
-            <tr>
-              <td>Defense:</td>
-              <td>s</td>
-            </tr>
-            <tr>
-              <td>Base Experience:</td>
-              <td>s</td>
-            </tr>
-          </thead>
-        </table>
-      </div>
+      <table class="table table-sm">
+        <h2 class="text-center">Name (ID)</h2>
+        <thead>
+          <tr>
+            <th scope="col">Stat</th>
+            <th scope="col">Value</th>
+          </tr>
+          <tr>
+            <td>HP:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Attack:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Defense:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Base Experience:</td>
+            <td></td>
+          </tr>
+        </thead>
+      </table>
+
+      <footer>
+        <p>Made with <a href="http://pokeapi.co/">PokeAPI</a></p>
+        <p>
+          <a
+            class="media-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/kristoffer-g%C3%A4rling-bengtsson-4760b1203/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            class="media-link"
+            target="_blank"
+            href="https://github.com/kristoffergarling"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </p>
+      </footer>
     </div>
   </body>
 </html>
